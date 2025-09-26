@@ -1,12 +1,50 @@
 table, th, tr, td{
-    border: 1px dotted red;
+    border: 1px dotted white;
     border-collapse: collapse;
+    color:red
 }
 
 tr td:last-child{
-    background-color: aquamarine;
+    background-color: red;
+    color: white;
 }
 
 tr td:nth-last-child(3){
-    background-color: aquamarine;
+    background-color: red;
+    color: white;
+}
+
+tr:not(:has(td[rowspan])) +tr:not(:has(td[rowspan])):hover td{
+    background-color: aqua;
+}
+
+tbody tr:has(td[rowspan]):hover td{
+    background-color: blue;
+} 
+
+tr:has(td[rowspan]):hover +tr td{
+    background-color: blue;
+}   
+
+tr:has(td[rowspan]):has(+tr:hover) td{
+    background-color: aqua;
+}
+
+tr:not(:has(td[rowspan])):hover td{
+    background-color: aqua;
+}
+
+
+#gyakorlas{
+    background-color: red;
+    color: white;
+}
+
+#gyakorlas button:has(+p){
+    background-color: red;
+    color: white;
+}
+
+#gyakorlas:has(+a:hover) button{
+    color:red
 }
