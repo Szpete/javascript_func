@@ -1,0 +1,12 @@
+table, th, tr, td{
+    border: 1px dotted red;
+    border-collapse: collapse;
+}
+
+tr td:last-child{
+    background-color: aquamarine;
+}
+
+tr td:nth-last-child(3){
+    background-color: aquamarine;
+}
