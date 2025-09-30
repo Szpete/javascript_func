@@ -9,3 +9,7 @@ table tbody tr{
 table tbody tr:nth-child(odd){
     background-color: lightblue;
 }
+table tbody tr:hover{
+    background-color: red;
+    font-weight: bold;
+}

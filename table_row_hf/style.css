@@ -1,0 +1,47 @@
+table, th, tr, td{
+    border: 1px, solid, pink;
+    border-collapse: collapse;
+}
+
+table{
+    background-color: aqua;
+    color: white;
+}
+
+tr td:last-child{
+    background-color: purple;
+}
+
+tr td:nth-last-child(3){
+    background-color: purple;
+}
+
+tr:not(:has(td[rowspan]))+ tr:not(:has(td[rowspan])):hover td{
+    background-color: orange;
+    font-weight: bold;
+    color: red;
+}
+
+tr:has(td[rowspan]):hover td{
+    background-color: red;
+    font-weight: bold;
+    color: orange;
+}
+
+tr:has(td[rowspan]):hover+tr td{
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+}
+
+tr:has(td[rowspan]):has(+tr:hover) td{
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+}
+
+tr:has(td[rowspan]):has(+tr:hover) tr td{
+    background-color: green;
+    font-weight: bold;
+    color: white;
+}
