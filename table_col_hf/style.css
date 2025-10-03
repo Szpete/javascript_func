@@ -1,26 +1,18 @@
-table, th, tr, td{
-    border: 2px dotted green;
-    border-collapse: collapse;
 
+table, tr, td, th{
+    border: 2px, dotted, green;
+    border-collapse: collapse;
 }
 
-th{
+table tbody tr{
     background-color: yellow;
 }
-table thead ~ tbody > tr{
-    background-color: blueviolet;
-}
 
-table tbody > tr{
-    background-color: beige;
-}
-
-tbody tr:nth-child(2n){
+table tbody tr:nth-child(odd){
     background-color: lightblue;
-
 }
 
-tbody tr:hover{
+table tbody tr:hover{
     background-color: red;
-    font-weight: bold;    
+    font-weight: bold;
 }
