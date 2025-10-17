@@ -51,11 +51,11 @@ th3.colSpan="2"
 tr.appendChild(th3)
 
 
-const tbdody = document.createElement('tbody')
+const tbody = document.createElement('tbody')
 table.appendChild(tbody)
 
 const tr2 = document.createElement('tr')
-tbdody.appendChild(tr2)
+tbody.appendChild(tr2)
 
 const td = document.createElement('td')
 td.innerText = "Optika"
