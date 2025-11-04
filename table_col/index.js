@@ -61,9 +61,6 @@ for (const a of arr){
         td3.colSpan = "2"
         th3.colSpan = "2"
     }
-    
-
-
 }
 
 /**
@@ -79,7 +76,63 @@ function CreateCellElement(celltype,cellcontent,cellrow){
     cellrow.appendChild(cell)
 
     return cell 
-
-
-
 }
+
+
+
+
+
+
+
+
+
+//hazi feladat
+
+
+const form = document.createElement('form'); 
+form.id = 'form_js'; 
+document.body.appendChild(form); 
+
+
+const h2 = document.createElement('h2'); 
+h2.innerText = 'Javascript form'; 
+form.appendChild(h2); 
+
+/**
+ * @param {string} labelText 
+ * @param {string} inputType
+ * @param {string} inputId 
+ * @param {HTMLElement} forms 
+ */
+function createInputField(labelText, inputType, inputId, forms) {
+    const label = document.createElement('label'); 
+    label.htmlFor = inputId; 
+    label.innerText = labelText; 
+    forms.appendChild(label); 
+
+    const br1 = document.createElement('br'); 
+    forms.appendChild(br1); 
+
+    const input = document.createElement('input'); 
+    input.type = inputType; 
+    input.id = inputId; 
+    input.name = inputId; 
+    forms.appendChild(input); 
+
+    const br2 = document.createElement('br');
+    forms.appendChild(br2); 
+
+    const br3 = document.createElement('br');
+    forms.appendChild(br3); 
+}
+
+
+createInputField('Költő neve:', 'text', 'kolto_nev', form); 
+createInputField('Korszak:', 'text', 'korszak', form); 
+createInputField('Szerelme:', 'text', 'szerelem1', form); 
+createInputField('Szerelme:', 'text', 'szerelem2', form); 
+
+
+const button = document.createElement('button'); 
+button.innerText = 'Hozzáadás'; 
+form.appendChild(button); 
