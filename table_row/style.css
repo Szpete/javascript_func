@@ -48,3 +48,15 @@ tr:not(:has(td[rowspan])):hover td{
 #gyakorlas:has(+a:hover) button{
     color:red
 }
+
+
+
+
+
+
+
+
+
+tr td.marked{
+    color: red;
+}

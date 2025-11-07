@@ -67,6 +67,16 @@ for(const a of tomb){
 
     const td2 = document.createElement('td')
     td2.innerText = a.nationality
+    td2.addEventListener("click", function(e){
+        /** 
+        * @type {HTMLElement}
+        */
+        const i = e.target
+        i.classList.add('marked')
+        
+    })
+    
+    
     tr2.appendChild(td2)
 
     const td3 = document.createElement('td')
@@ -93,7 +103,14 @@ for(const a of tomb){
         td2.rowSpan="2"
 
     }
-
-
 }
+
+
+
+
+
+
+
+
+
 
